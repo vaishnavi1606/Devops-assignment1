@@ -118,6 +118,8 @@ $  ln –s /etc/nginx/sites-available /etc/nginx/sites-enabled
 1.	Add app.conf file into it
 
 2.	$ /etc/nginx/sites-available/app.conf
+
+
  server {
     listen 80;
 
