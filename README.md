@@ -30,6 +30,7 @@ NOTE:
 a.	Fundamental Instrution
 1.	FROM:  It specifying the base image of the resultant docker image
 2.	ENV NODE_OPTIONS:  It specifying size of memory,cpu limit,etc.
+
 b.	Configuration Instruction
 1.	RUN: Which is use for RUN the command on the top of the image
 2.	COPY: is used for coping some file from host to container
