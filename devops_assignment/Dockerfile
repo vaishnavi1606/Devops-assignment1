@@ -1,4 +1,4 @@
-FROM node:dubnium
+FROM node:latest
 ENV NODE_OPTIONS --max-old-space-size=2048
 WORKDIR /app
 COPY ./package* ./
