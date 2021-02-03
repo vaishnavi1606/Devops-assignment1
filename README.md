@@ -75,12 +75,19 @@ c.	Execution Instruction
         
   NOTE: 
 •	 In this docker-compose.yml file each service are running separately.
+
 •	3 different containers are created and having 3 separate images as per the the docker-compose.yml file
+
 •	In this docker-compose.yml file docker is instructed  to restart the container if it fails. 
+
 •	Adding mango db and container into that and mapping port of the container
+
 •	Adding mysql db container into that mapping port of the container
+
 •	And link of the both container into nodejs application container it will reachable to the node application container
+
 •	persistent storage is used in the docker compose for sync for database in host to the docker container. This is user for mounting volume in it
+
 •	Persistent storage it will help of backup of the database of the container. 
 
 6.	Execute the command 
