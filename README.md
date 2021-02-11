@@ -11,17 +11,25 @@ $ sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docke
               $ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
               $ docker-compose --version
 4.	Created a Dockerfile using this code for nodejs application.
-   FROM node:latest
-   ENV NODE_OPTIONS --max-old-space-size=2048
-   WORKDIR /app
-   COPY ./package* ./
-   COPY ./* ./
-   RUN ls -al
-   RUN npm install && \
-       npm cache clean --force
-  COPY . .
-  EXPOSE 51005
-  CMD ["node", "index.js"]
+  
+ 
+ FROM node:dubnium
+ENV NODE_OPTIONS --max-old-space-size=2048
+WORKDIR /app
+
+COPY ./package* ./
+
+RUN ls -al
+
+RUN npm install && \
+    npm cache clean --force
+
+COPY . .
+
+EXPOSE 51005
+
+CMD ["node", "index.js"]
+
 
 NOTE: 
 •	In this Docker file I used Fundamental instruction, Configuration instruction and Execution instruction which is as follows
